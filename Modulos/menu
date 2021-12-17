@@ -253,7 +253,7 @@ echo -e "\033[1;34m[\033[1;37m21 •\033[1;34m]\033[1;37m ➩ \033[1;33mBOT TELE
 echo -e "\033[1;34m[\033[1;37m22 •\033[1;34m]\033[1;37m ➩ \033[1;33mBOT TESTE $stsbotteste \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m23 •\033[1;34m]\033[1;37m ➩ \033[1;33mBLOQUER SITE\033[1;37m \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m24 •\033[1;34m]\033[1;37m ➩ \033[1;33mAUTO REBOOT (00:00H) \033[0;32m"
-echo -e "\033[1;34m[\033[1;37m25 •\033[1;34m]\033[1;37m ➩ \033[1;33mSISTEMA Avançado (DSTV) \033[0;32m"
+echo -e "\033[1;34m[\033[1;37m25 •\033[1;34m]\033[1;37m ➩ \033[1;33mSISTEMA AVANÇADO \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m26 •\033[1;34m]\033[1;37m ➩ \033[1;33mREINICIAR SISTEMA \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m27 •\033[1;34m]\033[1;37m ➩ \033[1;33mREINICIAR SERVIÇOS \033[0;32m"
 echo -e "\033[1;34m[\033[1;37m28 •\033[1;34m]\033[1;37m ➩ \033[1;33mMAIS OPÇÕES (DSTV) \033[1;32m\033[0;32m"
@@ -293,7 +293,7 @@ case "$x" in
    ;;
    25)
    clear
-   SISTEMA AVANÇADO 
+   multi 
    echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar ao \033[1;32mMENU!\033[0m"; read
    menu2
    ;;
