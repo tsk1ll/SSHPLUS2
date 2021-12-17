@@ -447,6 +447,8 @@ cd /bin/ && rm -f webmin.sh*
 cd /bin/ && rm -f prnet.sh*
 cd /bin/ && rm -f dns-netflix.sh*
 cd /bin/ && rm -f blockuser*
+cd /bin/ && rm -f multi*
+cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/websocket.sh > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/shutdown -r 16:00 > /dev/null 2>&1
@@ -458,7 +460,7 @@ cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/prnet.sh >
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/dns-netflix.sh > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blockuser > /dev/null 2>&1
 cd /bin/ && chmod +x blocksite
-cd /bin/ && chmod +x multi.sh
+cd /bin/ && chmod +x multi
 cd /bin/ && chmod +x swapmemory
 cd /bin/ && chmod +x shutdown -r 00:00
 cd /bin/ && chmod +x websocket.sh
