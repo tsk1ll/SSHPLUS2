@@ -2150,7 +2150,7 @@ exit 0' >$RCLOCAL
 	                        websocket.sh
 				;;   
 			13 | 13)
-				v2rayclean
+				v2ray clean
 				;;
                         14 | 14)
 				menu
