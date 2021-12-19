@@ -1,11 +1,15 @@
 #!/bin/bash
-### BY GOD OF SKY ###
+###GÊNIO HACKER###
 clear
 echo -e "\E[41;1;37m  TWEAKER QUICK    \E[0m"
 if [[ `grep -c "^#PH56" /etc/sysctl.conf` -eq 1 ]]
 then
 echo -e "\033[01;34m===================================================================="
 	echo -e "\033[1;33mOOPS! CONFIGURAÇÃO TWEAKER JA APLICADO...\033[1;37m"
+echo ""
+	echo -e "\033[1;33mREMOVAR EM CASO DE LENTIDÂO EXTREMA !\033[1;37m"
+echo ""
+	echo -e "\033[1;33mAPÓS REMOVER, REINICIE SEU SERVIDOR, PARA RESETAR OS VALORES.\033[1;37m"
 echo -e "\033[01;34m====================================================================\033[1;37m"
 	echo ""
 	read -p "DESEJA REMOVER CONFIGURAÇÃO TWEAKER? [sim/nao]: " -e -i nao resposta0
@@ -168,16 +172,13 @@ sysctl -p /etc/sysctl.conf > /dev/null
 echo -n > /etc/sysctl.conf
 crontab -u root -l | grep -v '@daily /sbin/fstrim -a || true'  | crontab -u root -
 crontab -u root -l | grep -v '@daily /bin/ackclear'  | crontab -u root -
-crontab -u root -l | grep -v '@daily sleep 10s && /bin/prissh'  | crontab -u root -
+crontab -u root -l | grep -v '@daily /bin/prissh'  | crontab -u root -
+crontab -u root -l | grep -v '@reboot sleep 10s && /bin/prissh'  | crontab -u root -
 crontab -u root -l | grep -v '@reboot sleep 10s && /bin/tweaker'  | crontab -u root -
 crontab -u root -l | grep -v '@reboot sleep 10s && /bin/acksyshttpack'  | crontab -u root -
-crontab -u root -l | grep -v '@reboot sleep 10s && /bin/prissh'  | crontab -u root -
-cd /bin/ && rm -f acksyshttpack*
 cd /bin/ && rm -f ackclear*
 cd /bin/ && rm -f prissh*
-cd /bin/ && rm -f tweaker*
-cd /bin/ && wget https://raw.githubusercontent.com/ACKHTTP/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/tweaker > /dev/null 2>&1
-cd /bin/ && chmod +x tweaker
+cd /bin/ && rm -f acksyshttpack*
 chattr -i /etc/resolv.conf
 chattr -i  /etc/systemd/resolved.conf
 echo -n > /etc/security/limits.conf
@@ -186,29 +187,23 @@ echo -n > /etc/systemd/logind.conf
 echo -n > /etc/systemd/resolved.conf
 echo -n > /etc/systemd/resolved.conf
 
-sleep 3s
 		echo ""
-	echo -e "\033[1;32mCONFIGURAÇÃO DE TWEAKER REMOVIDO COM SUCESSO !"
-sleep 3s
+	echo -e "\033[1;32mCONFIGURAÇÃO DE TWEAKER REMOVIDO COM SUCESSO !\033[1;37m"
 echo ""
-	echo -e "\033[1;33mREINICIE SEU SERVIDOR..."
+echo ""
 sleep 3s
-		echo ""
-echo -e "\033[1;36mVOLTANDO AO MENU..."
-sleep 6s
-		menu
+             exit
 	else
 echo ""
-echo -e "\033[1;31mRETORNANDO..."
-sleep 3s
-menu
+exit
 	fi
 else
 echo -e "\033[01;34m===================================================================="
-echo -e "\033[1;33mUTILIZE EM SISTEMA ATUALIZADOS \033[1;32m(UBUNTU OU DEBIAN )"
+echo -e "\033[1;33mALTA PERFORMACE"
+echo -e "\033[1;32mRendimento pode ser Superior ou não"
 echo -e "\033[01;34m===================================================================="
 echo ""
-echo -e "\033[1;33mSERA APLICADO AJUSTES NO SERVIDOR, PARA OBTER UMA ALTA PERFORMANCE"
+echo -e "\033[1;33mSERÁ APLICADO AJUSTES NO SERVIDOR, PARA OBTER UMA ALTA PERFORMANCE"
 echo -e "\033[1;33mAUMENTANDO LIMITE DE VALORES PADRÃO DO KERNEL LINUX"
 echo ""
 echo -e "\033[1;33mO RENDIMENTO PODE SER SUPERIOR OU NÃO."
@@ -373,6 +368,10 @@ net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
 net.ipv6.conf.lo.disable_ipv6 = 1" >> /etc/sysctl.conf
 #
+mount -o remount,noatime,nodiratime,nobarrier auto /
+mount -o remount,noatime,nodiratime, auto /dev
+mount -o remount,noatime,nodiratime, auto /proc
+mount -o remount,noatime,nodiratime, auto /sys
 apt install speedtest-cli -y > /dev/null 2>&1
 sleep 3s
 echo -e "\033[01;34m====================================================================\033[1;37m"
@@ -386,26 +385,25 @@ cd /bin/ && rm -f tweaker*
 cd /bin/ && rm -f acksyshttpack*
 cd /bin/ && rm -f ackclear*
 cd /bin/ && rm -f prissh*
-cd /bin/ && wget https://raw.githubusercontent.com/ACKHTTP/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/tweaker > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/ACKHTTP/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/acksyshttpack > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/ACKHTTP/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/ackclear > /dev/null 2>&1
-cd /bin/ && wget https://raw.githubusercontent.com/ACKHTTP/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/prissh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/ogenio/ACKHTTP-SERVER-MANAGER/main/tweaker > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/ogenio/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/tweaker > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/ogenio/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/acksyshttpack > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/ogenio/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/ackclear > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/ogenio/ACKHTTP-SERVER-MANAGER/main/SCRIPT%20ACKHTTP%20SERVER/SCRIPT%20ACKHTTP%20SERVER/FERRAMENTAS/prissh > /dev/null 2>&1
 cd /bin/ && chmod +x tweaker
 cd /bin/ && chmod +x acksyshttpack
 cd /bin/ && chmod +x ackclear
 cd /bin/ && chmod +x prissh
-cd /bin/ && acksyshttpack > /dev/null 2>&1
-cd /bin/ && prissh > /dev/null 2>&1
 echo -e "\033[1;33mINICIANDO PROCESSOS..."
 sleep 5s
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( SYSCTL )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( SYSCTL )\033[1;37m"
 sleep 3s
 sysctl -p /etc/sysctl.conf > /dev/null
 chattr -i /etc/resolv.conf
 chattr -i  /etc/systemd/resolved.conf
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( DNS )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( DNS )\033[1;37m"
 sleep 3s
 ### "DNS"
 rm /etc/resolv.conf
@@ -415,10 +413,9 @@ echo "nameserver 208.67.222.222" >> /etc/resolv.conf
 echo "nameserver 1.1.1.1" >> /etc/resolv.conf
 echo "nameserver 8.8.8.8" >> /etc/resolv.conf
 chmod +x /etc/resolv.conf
-chattr +i /etc/resolv.conf
 ### "SECURITY LIMITS" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO LIMITES \033[1;32m( SECURITY )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO LIMITES \033[1;32m( SECURITY )\033[1;37m"
 sleep 3s
 echo -n > /etc/security/limits.conf
 echo "root soft nproc unlimited" >> /etc/security/limits.conf
@@ -447,7 +444,7 @@ echo "root soft nice -11" >> /etc/security/limits.conf
 echo "root hard nice -11" >> /etc/security/limits.conf
 ### "NETWORKS" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO NETWORKS \033[1;32m( REDE )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO NETWORKS \033[1;32m( REDE )\033[1;37m"
 sleep 3s
 echo -n > /etc/networks
 echo "default         0.0.0.0" >> /etc/networks
@@ -455,7 +452,7 @@ echo "loopback        127.0.0.1" >> /etc/networks
 echo "link-local      192.168.0.0" >> /etc/networks
 ### "SYSTEM.CONF" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( LIMITES SYSTEM )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( LIMITES SYSTEM )\033[1;37m"
 sleep 3s
 echo -n > /etc/systemd/system.conf
 echo "[Manager]" >> /etc/systemd/system.conf
@@ -479,7 +476,7 @@ echo "DefaultLimitRTTIME=infinity" >> /etc/systemd/system.conf
 echo "DefaultLimitNICE=-19" >> /etc/systemd/system.conf
 ### "HOSTS" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO HOSTS \033[1;32m( RESOLUÇAO DNS )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO HOSTS \033[1;32m( RESOLUÇAO DNS )\033[1;37m"
 sleep 3s
 echo -n > /etc/hosts
 echo -n > /etc/host.conf
@@ -488,7 +485,7 @@ echo "127.0.0.1 localhost" >> /etc/hosts
 echo "order hosts,nospoof off,multi on,mdns on" >> /etc/host.conf
 ### "SYSTEMD-LOGIN" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( AUTENTICAÇÃO )...\033[1;37m"
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( AUTENTICAÇÃO )\033[1;37m"
 sleep 3s
 echo -n > /etc/systemd/logind.conf
 echo "[Login]" >> /etc/systemd/logind.conf
@@ -498,7 +495,7 @@ echo "InhibitorsMax=8192" >> /etc/systemd/logind.conf
 echo "KillUserProcesses=no" >> /etc/systemd/logind.conf
 ### "RESOLVED CONF" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( RESOLVEDOR DNS )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( RESOLVEDOR DNS )\033[1;37m"
 sleep 3s
 echo -n > /etc/systemd/resolved.conf
 echo "[Resolve]" >> /etc/systemd/resolved.conf
@@ -510,17 +507,17 @@ echo "Cache=yes" >> /etc/systemd/resolved.conf
 echo "DNSStubListener=udp" >> /etc/systemd/resolved.conf
 ### "CRONTAB" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( CRONTAB )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( CRONTAB )\033[1;37m"
 sleep 3s
 (crontab -l; echo "@daily /sbin/fstrim -a || true") | crontab - > /dev/null 2>&1
 (crontab -l; echo "@daily /bin/ackclear") | crontab - > /dev/null 2>&1
-(crontab -l; echo "@daily sleep 10s && /bin/prissh") | crontab - > /dev/null 2>&1
-(crontab -l; echo "@reboot sleep 10s && /bin/tweaker") | crontab - > /dev/null 2>&1
-(crontab -l; echo "@reboot sleep 10s && /bin/acksyshttpack") | crontab - > /dev/null 2>&1
+(crontab -l; echo "@daily /bin/prissh") | crontab - > /dev/null 2>&1
 (crontab -l; echo "@reboot sleep 10s && /bin/prissh") | crontab - > /dev/null 2>&1
+(crontab -l; echo "@reboot sleep 10s && /bin/acksyshttpack") | crontab - > /dev/null 2>&1
+(crontab -l; echo "@reboot sleep 10s && /bin/tweaker") | crontab - > /dev/null 2>&1
 ### "SERVICE SSHD" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( SSHD )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( SSHD )\033[1;37m"
 sleep 3s
 echo -n > /etc/ssh/sshd_config
 echo "X11Forwarding yes" >> /etc/ssh/sshd_config
@@ -548,7 +545,7 @@ echo "ipqos af21 cs1" >> /etc/ssh/sshd_config
 service sshd reload /dev/null 2>&1
 ### "SERVICE SSH" ###
 echo ""
-echo -e "\033[1;33mCONFIGURANDO \033[1;32m( SSH )\033[1;37m..."
+echo -e "\033[1;33mCONFIGURANDO \033[1;32m( SSH )\033[1;37m"
 sleep 3s
 echo -n > /etc/ssh/ssh_config
 echo "Host *" >> /etc/ssh/ssh_config
@@ -573,16 +570,43 @@ echo "ServerAliveInterval 30s" >> /etc/ssh/ssh_config
 echo "TCPKeepAlive yes" >> /etc/ssh/ssh_config
 echo "ipqos af21 cs1" >> /etc/ssh/ssh_config
 service ssh reload /dev/null 2>&1
+echo ""
+echo -e "\033[1;33mCONFIGURANDO MELHORIAS NA CARGA \033[1;32m( CPU )"
+echo "obase=16;2^$(nproc)-1" | bc > /sys/class/net/eth0/queues/rx-0/rps_cpus
+echo 16384 > /sys/class/net/eth0/queues/rx-0/rps_flow_cnt
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
+bash -c 'echo 1 > /sys/module/processor/parameters/ignore_ppc'
+bash -c 'echo tsc > /sys/devices/system/clocksource/clocksource0/current_clocksource'
+bash -c 'echo 4400000 > /scaling_max_freq'
 sleep 3s
 echo ""
-	echo -e "\033[1;32mCONFIGURAÇÃO DE TWEAKER APLICADO COM SUCESSO !"
+echo -e "\033[1;33mCONFIGURANDO MTU & TXQUEUELEN \033[1;32m( INTERFACE ETH0 & LOOPBACK)"
+/sbin/ifconfig eth0 mtu 9000
+/sbin/ifconfig eth0 txqueuelen 13888
+/sbin/ifconfig lo mtu 9000
+/sbin/ifconfig lo txqueuelen 13888
+ethtool -G eth0 rx 3502 > /dev/null 2>&1
+ethtool -G eth0 tx 2048 > /dev/null 2>&1
 sleep 3s
 echo ""
-echo -e "\033[1;36mVOLTANDO AO MENU..."
+echo -e "\033[1;33mCONFIGURANDO CWND \033[1;32m(INITCWND)"
+/sbin/ip route | while read p; do ip route change $p initcwnd 10 initrwnd 10 cwnd 10 mtu lock 9000 congctl lock illinois quickack 1; done
 sleep 3s
-	else
 echo ""
-echo -e "\033[1;31mRETORNANDO..."
-	fi
+echo -e "\033[1;33mPRIORIZANDO PROCESSOS \033[1;32m( PYTHON + BADVPN + OPENSSH)"
+for i in $(pgrep sshd); do chrt -p 99 $i; done
+for i in $(pgrep badvpn); do chrt -p 99 $i; done
+for i in $(pgrep python); do chrt -p 99 $i; done
+sleep 3s
+echo ""
+	echo -e "\033[1;32mCONFIGURAÇÃO DE TWEAKER APLICADO COM SUCESSO !\033[1;37m"
+echo ""
+echo ""
+sleep 3s
+        else
+echo ""
+echo -e "\033[1;31mA INSTALAÇÃO FOI CANCELADA !\033[1;37m"
+sleep 3s
+        fi
 fi
-sleep 5s && menu
+exit
