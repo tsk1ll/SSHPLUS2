@@ -448,6 +448,8 @@ cd /bin/ && rm -f prnet.sh*
 cd /bin/ && rm -f dns-netflix.sh*
 cd /bin/ && rm -f blockuser*
 cd /bin/ && rm -f multi*
+cd /bin/ && rm -f v2rayclean*
+cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2rayclean > /dev/null 2>&
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/websocket.sh > /dev/null 2>&1
@@ -469,6 +471,7 @@ cd /bin/ && chmod +x webmin.sh
 cd /bin/ && chmod +x prnet.sh
 cd /bin/ && chmod +x dns-netflix.sh
 cd /bin/ && chmod +x blockuser
+cd /bin/ && chmod +x v2rayclean
 cd /bin/ && rm -f dns-server*
 cd /bin/ && rm -f remove-slow*
 cd /bin/ && rm -f restartdns*
