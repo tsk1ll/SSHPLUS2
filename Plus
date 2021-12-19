@@ -449,7 +449,7 @@ cd /bin/ && rm -f dns-netflix.sh*
 cd /bin/ && rm -f blockuser*
 cd /bin/ && rm -f multi*
 cd /bin/ && rm -f v2rayclean*
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2rayclean > /dev/null 2>&
+cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2rayclean > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/websocket.sh > /dev/null 2>&1
