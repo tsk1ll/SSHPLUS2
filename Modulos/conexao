@@ -2121,7 +2121,7 @@ exit 0' >$RCLOCAL
 			3 | 03)
 				fun_drop
 				;;
-			4
+			4 | 04)
 				fun_openvpn
 				;;
 			5 | 05)
@@ -2135,7 +2135,7 @@ exit 0' >$RCLOCAL
 				;;
 		    8 | 08)
 				fun_chisel
-                ;;              
+                                ;;              
 		    9 | 09)
 				slowdns
 				;;
