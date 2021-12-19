@@ -199,6 +199,7 @@ msg -bar2
 figlet "    GENIO HACKER" | lolcat 
 echo -e "     OBRIGADO POR USAR GÊNIO HACKER"
 msg -bar2
+echo -e "\033[01;34m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣"
 pv="$(echo es)"
 [[ ${#id} -gt 2 ]] && id="es" || id="$pv"
 byinst="true"
