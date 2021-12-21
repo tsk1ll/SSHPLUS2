@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -avbh /root/backup.sh root@51.161.70.76:/root/backup.sh
+rsync -avbh /root/backup.sh root@159.223.159.227:/root
