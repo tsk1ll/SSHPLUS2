@@ -531,6 +531,9 @@ case "$x" in
    f) 
    blockuser
    ;;
+   g) 
+   Autobackup
+   ;;
    p)
    menu2
    ;;
