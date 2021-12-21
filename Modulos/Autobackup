@@ -1,3 +1,6 @@
 #!/bin/bash
-#rsync -avbh /root/backup.vps root@159.223.159.227:/root
+while :
+do
 tar cvf /root/backup.vps /root/usuarios.db /etc/shadow /etc/passwd /etc/group /etc/gshadow /etc/SSHPlus/senha -r 18:58h
+sleep 10m
+done
