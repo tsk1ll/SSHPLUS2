@@ -532,7 +532,7 @@ case "$x" in
    blockuser
    ;;
    g) 
-   Autobackup
+   Autobackup -r 22:00
    ;;
    p)
    menu2
