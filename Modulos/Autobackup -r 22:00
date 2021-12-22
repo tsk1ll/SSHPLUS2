@@ -1,6 +1,0 @@
-#!/bin/sh
-while :
-do
-tar cvf /root/backup.vps /root/usuarios.db /etc/shadow /etc/passwd /etc/group /etc/gshadow /etc/SSHPlus/senha;
-sleep 10
-done
