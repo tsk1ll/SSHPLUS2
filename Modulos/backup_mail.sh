@@ -7,13 +7,13 @@
 # Variáveis auxiliares:.(Utilizadas no decorrer do script)
 # No exemplo esta sendo utilizado o /etc, porem fica a critério do 
 # Admin/usuário escolher qual o diretório a ser backupeado:.
-NOME_DIRETORIO_DESTINO="/etc/" 
+NOME_DIRETORIO_DESTINO="/root/backup.vps" 
 export NOME_DIRETORIO_DESTINO
 
 # Nome do diretório para onde o backup será movido, após sua 
 # conclusão: (Não esqueça de verificar as permissões do diretório
 # onde o backup será movido)
-NOME_DIRETORIO_MOV="/mnt/backup"
+NOME_DIRETORIO_MOV="/mnt/backup.sh"
 
 # Formatação da Data:Neste caso a formatação fica da seguinte forma:
 # Ex:. 20/05/2012 para outras formas verifique o manual do comando 
