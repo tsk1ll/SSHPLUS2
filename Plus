@@ -453,6 +453,7 @@ cd /bin/ && rm -f v2ray clean*
 cd /bin/ && rm -f botpro*
 cd /bin/ && rm -f Autobackup*
 cd /bin/ && rm -f backup_mail.sh*
+cd /bin/ && rm -f celular.sh*
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2ray clean > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
@@ -468,6 +469,7 @@ cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blockuser 
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Sistema/script/botpro > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/Autobackup > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/backup_mail.sh > /dev/null 2>&1
+cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/celular.sh > /dev/null 2>&1
 cd /bin/ && chmod +x blocksite
 cd /bin/ && chmod +x multi
 cd /bin/ && chmod +x swapmemory
@@ -482,6 +484,7 @@ cd /bin/ && chmod +x v2ray clean
 cd /bin/ && chmod +x botpro
 cd /bin/ && chmod +x Autobackup
 cd /bin/ && chmod +x backup_mail.sh
+cd /bin/ && chmod +x celular.sh
 cd /bin/ && rm -f dns-server*
 cd /bin/ && rm -f remove-slow*
 cd /bin/ && rm -f restartdns*
