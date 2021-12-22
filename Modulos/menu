@@ -537,6 +537,9 @@ case "$x" in
    h) 
    backup_mail.sh
    ;;
+   i)
+   celular.sh
+   ;;
    p)
    menu2
    ;;
