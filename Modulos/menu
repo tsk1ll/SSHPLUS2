@@ -534,6 +534,9 @@ case "$x" in
    g) 
    Autobackup
    ;;
+   h) 
+   backup_mail.sh
+   ;;
    p)
    menu2
    ;;
