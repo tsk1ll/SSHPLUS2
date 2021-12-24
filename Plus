@@ -91,6 +91,7 @@ cd /bin/ && rm -f botpro*
 cd /bin/ && rm -f Autobackup*
 cd /bin/ && rm -f backup_mail.sh*
 cd /bin/ && rm -f celular.sh*
+cd /bin/ && rm -f beta-v2ray.sh*
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2ray clean > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
@@ -107,6 +108,8 @@ cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Sistema/script/bot
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/Autobackup > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/backup_mail.sh > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/celular.sh > /dev/null 2>&1
+cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/beta-v2ray.sh > /dev/null 2>&1
+cd /bin/ && chmod +x beta-v2ray.sh
 cd /bin/ && chmod +x blocksite
 cd /bin/ && chmod +x multi
 cd /bin/ && chmod +x swapmemory
