@@ -378,7 +378,6 @@ system+=$(cut -d' ' -f3 /etc/issue.net)
 else
 system=$(cut -d' ' -f1 /etc/issue.net)
 fi
-
 v2ui() {
 cd $HOME
 fun_ip(){
