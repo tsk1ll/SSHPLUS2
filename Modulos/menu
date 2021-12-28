@@ -569,7 +569,7 @@ case "$x" in
 
    ;;
    i)
-   
+   prnet.sh
    ;;
    p)
    menu2
