@@ -80,7 +80,7 @@ wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2raymanager > /dev/nu
 chmod 777 v2raymanager > /dev/null 2>&1
 chmod 777 menu > /dev/null 2>&1
 sudo yum install epel-release -y
-sudo snap install figlet -y
+sudo yum install figlet -y
 cd /bin/ && rm -f blocksite*
 cd /bin/ && rm -f shutdown -r 00:00*
 cd /bin/ && rm -f websocket.sh*
