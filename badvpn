@@ -3,7 +3,7 @@
 # HOSPEDADO POR @ogeniohacker 
 #----------------------------------------------------------------------
 clear
-crz=$(echo -e "\033[1;31m           @ogeniohacker\033[1;32m"
+crz=$(echo -e "\033[1;31m           @ogeniohacker\033[1;32m")
 echo """              $crz             
  _____ _____ _____ _____ _         
 |   __|   __|  |  |  _  | |_ _ ___ 
