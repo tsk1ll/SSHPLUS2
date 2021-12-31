@@ -31,3 +31,5 @@ mysql -h localhost -u root -p$passdb -e "drop database sshplus"
 mysql -h localhost -u root -p$passdb -e 'CREATE DATABASE sshplus'
 mysql -h localhost -u root -p$passdb --default_character_set utf8 sshplus < sshplus.sql
 echo -e "\n\033[1;32mBACKUP RESTAURADO !\033[0m"
+
+echo "🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴"
