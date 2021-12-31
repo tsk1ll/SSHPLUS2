@@ -12,7 +12,8 @@ echo """              $crz
                       """
 echo -e "\033[1;33m🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴\033[0m"
 echo -e "\033[1;33mESSE SCRIPT RESTAURA O BANCO DE DADOS\n(BACKUP) DO PAINEL !\033[0m" 
-echo -e "\n\033[1;33mÉ NECESSÁRIO O PAINEL INSTALADO E O\nAQUIVO (\033[1;32msshplus.sql\033[1;33m) NO DIRETORIO ROOT !\033[0m\n" 
+echo -e "\n\033[1;33mÉ NECESSÁRIO O PAINEL INSTALADO E O\nAQUIVO (\033[1;32msshplus.sql\033[1;33m) NO DIRETORIO ROOT !\033[0m\n"
+echo -e "\033[1;33m🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸🩸\033[0m"
 echo -ne "\033[1;32mEnter para continuar...\033[0m"; read
 echo -e "\033[1;33m🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴🟣🔴\033[0m"
 [[ ! -e /var/www/html/pages/system/pass.php ]] && {
