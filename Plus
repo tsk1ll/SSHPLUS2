@@ -125,6 +125,17 @@ cd /bin/ && rm -f Autobackup
 cd /bin/ && rm -f backup_mail.sh
 cd /bin/ && rm -f celular.sh
 cd /bin/ && rm -f beta-v2ray.sh
+cd /bin/ && rm -f dns-server
+cd /bin/ && rm -f remove-slow
+cd /bin/ && rm -f restartdns
+cd /bin/ && rm -f slowdns-drop
+cd /bin/ && rm -f slowdns-info
+cd /bin/ && rm -f slowdns-socks
+cd /bin/ && rm -f slowdns-ssh
+cd /bin/ && rm -f slowdns-ssl
+cd /bin/ && rm -f startdns
+cd /bin/ && rm -f stopdns
+mkdir /bin/slowdns*
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2ray clean > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
@@ -142,6 +153,17 @@ cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/Autobackup
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/backup_mail.sh > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/celular.sh > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/beta-v2ray.sh > /dev/null 2>&1
+cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/dns-server > /dev/null  2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/remove-slow > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/restartdns > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-drop > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-info > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-socks > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-ssh > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-ssl > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/startdns > /dev/null 2>&1
+cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/stopdns > /dev/null 2>&1
 cd /bin/ && chmod +x beta-v2ray.sh
 cd /bin/ && chmod +x blocksite
 cd /bin/ && chmod +x multi
@@ -158,29 +180,7 @@ cd /bin/ && chmod +x botpro
 cd /bin/ && chmod +x Autobackup
 cd /bin/ && chmod +x backup_mail.sh
 cd /bin/ && chmod +x celular.sh
-cd /bin/ && rm -f dns-server
-cd /bin/ && rm -f remove-slow
-cd /bin/ && rm -f restartdns
-cd /bin/ && rm -f slowdns-drop
-cd /bin/ && rm -f slowdns-info
-cd /bin/ && rm -f slowdns-socks
-cd /bin/ && rm -f slowdns-ssh
-cd /bin/ && rm -f slowdns-ssl
-cd /bin/ && rm -f startdns
-cd /bin/ && rm -f stopdns
-mkdir /bin/slowdns*
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/dns-server > /dev/null  2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/remove-slow > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/restartdns > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-drop > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-info > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-socks > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-ssh > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns-ssl > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/startdns > /dev/null 2>&1
-cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/stopdns > /dev/null 2>&1
-cd /bin/ && chmod +x slowdns
+cd /bin/slowdns && chmod +x slowdns
 cd /bin/slowdns && chmod +x dns-server
 cd /bin/slowdns && chmod +x remove-slow
 cd /bin/slowdns && chmod +x restartdns
