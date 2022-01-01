@@ -46,7 +46,7 @@ echo -e "\033[01;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%55s%s%-12s\n' "GÊNIO HACKER RED HAWK @OOGENIOHACKER" ; tput sgr0
 echo -e "\033[01;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣\033[0m"
 echo ""
-echo -e "                       \033[05;31mSISTELMAS \033[05;33mOPERACIONAIS\033[0m"
+echo -e "                       \033[05;31mSISTEMAS \033[05;33mOPERACIONAIS\033[0m"
 echo ""
 echo -e "\033[1;31m• \033[1;33mUBUNTU 18 x64\033[0m"
 echo -e "\033[1;31m• \033[1;33mUBUNTU 20 x64\033[0m"
