@@ -108,23 +108,23 @@ echo -e "    \033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
 echo ""
 fun_attlist () {
 apt-get update -y
-cd /bin/ && rm -f blocksite*
-cd /bin/ && rm -f shutdown -r 00:00*
-cd /bin/ && rm -f websocket.sh*
-cd /bin/ && rm -f multi.sh*
-cd /bin/ && rm -f swapmemory*
-cd /bin/ && rm -f tweaker*
-cd /bin/ && rm -f webmin.sh*
-cd /bin/ && rm -f prnet.sh*
-cd /bin/ && rm -f dns-netflix.sh*
-cd /bin/ && rm -f blockuser*
-cd /bin/ && rm -f multi*
-cd /bin/ && rm -f v2ray clean*
-cd /bin/ && rm -f botpro*
-cd /bin/ && rm -f Autobackup*
-cd /bin/ && rm -f backup_mail.sh*
-cd /bin/ && rm -f celular.sh*
-cd /bin/ && rm -f beta-v2ray.sh*
+cd /bin/ && rm -f blocksite
+cd /bin/ && rm -f shutdown -r 00:00
+cd /bin/ && rm -f websocket.sh
+cd /bin/ && rm -f multi.sh
+cd /bin/ && rm -f swapmemory
+cd /bin/ && rm -f tweaker
+cd /bin/ && rm -f webmin.sh
+cd /bin/ && rm -f prnet.sh
+cd /bin/ && rm -f dns-netflix.sh
+cd /bin/ && rm -f blockuser
+cd /bin/ && rm -f multi
+cd /bin/ && rm -f v2ray clean
+cd /bin/ && rm -f botpro
+cd /bin/ && rm -f Autobackup
+cd /bin/ && rm -f backup_mail.sh
+cd /bin/ && rm -f celular.sh
+cd /bin/ && rm -f beta-v2ray.sh
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2ray clean > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
@@ -158,19 +158,17 @@ cd /bin/ && chmod +x botpro
 cd /bin/ && chmod +x Autobackup
 cd /bin/ && chmod +x backup_mail.sh
 cd /bin/ && chmod +x celular.sh
-cd /bin/ && rm -f dns-server*
-cd /bin/ && rm -f remove-slow*
-cd /bin/ && rm -f restartdns*
-cd /bin/ && rm -f slowdns-drop*
-cd /bin/ && rm -f slowdns-info*
-cd /bin/ && rm -f slowdns-socks*
-cd /bin/ && rm -f slowdns-ssh*
-cd /bin/ && rm -f slowdns-ssl*
-cd /bin/ && rm -f startdns*
-cd /bin/ && rm -f stopdns*
-rm -rf /bin/slowdns*
+cd /bin/ && rm -f dns-server
+cd /bin/ && rm -f remove-slow
+cd /bin/ && rm -f restartdns
+cd /bin/ && rm -f slowdns-drop
+cd /bin/ && rm -f slowdns-info
+cd /bin/ && rm -f slowdns-socks
+cd /bin/ && rm -f slowdns-ssh
+cd /bin/ && rm -f slowdns-ssl
+cd /bin/ && rm -f startdns
+cd /bin/ && rm -f stopdns
 mkdir /bin/slowdns*
-rm -f /bin/slowdns*
 cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/slowdns > /dev/null 2>&1
 cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/dns-server > /dev/null  2>&1
 cd /bin/slowdns && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/remove-slow > /dev/null 2>&1
@@ -193,7 +191,6 @@ cd /bin/slowdns && chmod +x slowdns-ssh
 cd /bin/slowdns && chmod +x slowdns-ssl
 cd /bin/slowdns && chmod +x startdns
 cd /bin/slowdns && chmod +x stopdns
-cd > /dev/null 2>&1
 [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
 echo "crz: $(date)" > /usr/share/.plus/.plus
 }
