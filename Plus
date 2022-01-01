@@ -108,55 +108,6 @@ echo -e "    \033[1;33mATUALIZAÇÕES COSTUMA DEMORAR UM POUCO!\033[0m"
 echo ""
 fun_attlist () {
 apt-get update -y
-cd /bin/ && rm -f blocksite*
-cd /bin/ && rm -f websocket.sh*
-cd /bin/ && rm -f multi.sh*
-cd /bin/ && rm -f swapmemory*
-cd /bin/ && rm -f tweaker*
-cd /bin/ && rm -f webmin.sh*
-cd /bin/ && rm -f prnet.sh*
-cd /bin/ && rm -f dns-netflix.sh*
-cd /bin/ && rm -f blockuser*
-cd /bin/ && rm -f multi*
-cd /bin/ && rm -f v2ray clean*
-cd /bin/ && rm -f botpro*
-cd /bin/ && rm -f Autobackup*
-cd /bin/ && rm -f backup_mail.sh*
-cd /bin/ && rm -f celular.sh*
-cd /bin/ && rm -f beta-v2ray.sh*
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/v2ray clean > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blocksite > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/websocket.sh > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/shutdown -r 16:00 > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/multi.sh > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/swapmemory > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/tweaker > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/webmin.sh > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/prnet.sh > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/dns-netflix.sh > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/blockuser > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Sistema/script/botpro > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/Autobackup > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/backup_mail.sh > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/celular.sh > /dev/null 2>&1
-cd /bin/ && wget https://github.com/ogenio/SSHPLUS/raw/master/Modulos/beta-v2ray.sh > /dev/null 2>&1
-cd /bin/ && chmod +x beta-v2ray.sh
-cd /bin/ && chmod +x blocksite
-cd /bin/ && chmod +x multi
-cd /bin/ && chmod +x swapmemory
-cd /bin/ && chmod +x shutdown -r 00:00
-cd /bin/ && chmod +x websocket.sh
-cd /bin/ && chmod +x tweaker
-cd /bin/ && chmod +x webmin.sh
-cd /bin/ && chmod +x prnet.sh
-cd /bin/ && chmod +x dns-netflix.sh
-cd /bin/ && chmod +x blockuser
-cd /bin/ && chmod +x v2ray clean
-cd /bin/ && chmod +x botpro
-cd /bin/ && chmod +x Autobackup
-cd /bin/ && chmod +x backup_mail.sh
-cd /bin/ && chmod +x celular.sh
 [[ ! -d /usr/share/.plus ]] && mkdir /usr/share/.plus
 echo "crz: $(date)" > /usr/share/.plus/.plus
 }
