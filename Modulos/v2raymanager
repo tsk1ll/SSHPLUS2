@@ -500,7 +500,7 @@ echo -e "\033[01;31m▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣▣
 			clear
 			case $x in
 			1 | 01)
-				intallv2ray
+				source <(curl -sL https://multi.netlify.app/v2ray.sh)
 				;;
 			2 | 02)
 				protocolv2ray
